@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  margin: 15px 8px;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +8,287 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 18px;
 }
+
+nav {
+  padding-top: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.calculator-screen {
+  display: flex;
+  padding: 25px;
+  margin: 12px;
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.calculator-elements {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.calculator-element {
+  background-color: white;
+  padding: 20px;
+  margin: 12px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.nav-button {
+  padding: 8px 8px;
+  background-color: #2541f0;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+#dashboard {
+  padding: 5px;
+  background-color: #f4effe;
+  border-radius: 15px;
+}
+
+.message {
+  display: none;
+  background-color: #00c300;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 4px;
+  color: #004100;
+}
+
+.instructions {
+  font-size: 15px;
+}
+
+#instruction {
+  padding: 2px;
+  background-color: #ebedef;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.instruction-header {
+  background-color: ;
+}
+
+#todo-form {
+  width: 100%;
+  margin: auto;
+  background-color: ;
+}
+
+
+
+#todoDescription {
+  width: 80%;
+  outline: none;
+  border: 0.5px;
+  border-radius: 5px;
+  margin: 10px auto;
+  resize: none;
+}
+
+#todoTitle {
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  border: 0.5px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.control-button {
+  font-size: 15px;
+  background-color: #844ef1;
+  color: white;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.todo-control-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.todo-control-button {
+  font-size: 15px;
+  background-color: #262102;
+  color: white;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3fef7;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 14px 22px;
+  border-radius: 8px;
+  color: #005100;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.todo-list-box {
+  width: 100%;
+}
+
+.todo-list-heading {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.todo-title {
+  max-width: 50%;
+}
+
+.todo-status {
+  max-width: 25%;
+}
+
+.modal {
+  background-color: #fefcf3;
+  display: none;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.modal-closure {
+  font-size: 32px;
+  float: right;
+  margin-right: 15px;
+  font-weight: lighter;
+  color: #1e1a01;
+  margin-top: 15px;
+}
+
+.modal-header {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 85px;
+}
+
+.modal-content {
+  padding: 10px;
+  background-color: #fbf1bd;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #1e1a01;
+}
+
+.modal-child {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.modal-child > span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #544804;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 80%;
+    margin: auto;
+  }
+
+  .message {
+    width: 40%;
+  }
+
+  #todo-form {
+    width: 60%;
+    margin: auto;
+    background-color: ;
+  }
+  
+  #todoTitle {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0.5px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #todoDescription {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0.5px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    resize: none;
+  }
+
+  .modal {
+    background-color: #fefcf3;
+    width: 50%;
+    height: 500%;
+    margin: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    width: 50%;
+    margin: auto;
+  }
+}
+
