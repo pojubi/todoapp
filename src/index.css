@@ -26,13 +26,21 @@ a {
 }
 
 .calculator-screen {
-  display: flex;
-  padding: 25px;
+  padding: 35px;
   margin: 12px;
   font-size: 20px;
   border-radius: 6px;
   background-color: white;
 }
+
+.expression-screen {
+  display: flex;
+}
+
+.total-screen {
+  float: right;
+}
+
 
 .calculator-elements {
   display: flex;
@@ -61,6 +69,19 @@ a {
 #dashboard {
   padding: 5px;
   background-color: #f4effe;
+  border-radius: 15px;
+}
+
+#calculator {
+  padding: 5px;
+  background-color: #f4effe;
+  border-radius: 15px;
+}
+
+#calculator-instruction {
+  padding: 2px;
+  background-color: #ebedef;
+  margin-bottom: 15px;
   border-radius: 15px;
 }
 
@@ -245,6 +266,23 @@ a {
     margin: auto;
   }
 
+  #calculator {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    background-color: #f4effe;
+    border-radius: 15px;
+  }
+
+  #calculator-instruction {
+    width: 80%;
+    margin: auto;
+    padding: 2px;
+    background-color: #ebedef;
+    margin-bottom: 15px;
+    border-radius: 15px;
+  }
+
   .message {
     width: 40%;
   }
@@ -287,8 +325,25 @@ a {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {
-    width: 50%;
+    width: 70%;
     margin: auto;
+  }
+
+  #calculator {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    background-color: #f4effe;
+    border-radius: 15px;
+  }
+
+  #calculator-instruction {
+    width: 80%;
+    margin: auto;
+    padding: 2px;
+    background-color: #ebedef;
+    margin-bottom: 15px;
+    border-radius: 15px;
   }
 }
 
